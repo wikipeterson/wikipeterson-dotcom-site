@@ -182,7 +182,7 @@ input:focus{border-color:#2E5090}
 <div class="card"><h3>Past Expense Reports</h3><p class="cs">Pulled from your Google Sheet</p>
 <div id="histE" class="empty"><p>Loading...</p></div>
 <div class="hscr"><table class="htbl" id="histT" style="display:none">
-<thead><tr><th>Quarter</th><th>Period</th><th style="text-align:right">Cell</th><th style="text-align:right">Internet</th><th style="text-align:right">Mileage</th><th style="text-align:right">Home Office</th><th style="text-align:right">Other</th><th>Details</th><th style="text-align:right">Total</th><th>Certified</th></tr></thead>
+<thead><tr><th>Quarter</th><th>Period</th><th style="text-align:right">Cell</th><th style="text-align:right">Internet</th><th style="text-align:right">Mileage</th><th style="text-align:right">Home Office</th><th style="text-align:right">Other</th><th>Details</th><th style="text-align:right">Total</th><th>Certified</th><th></th></tr></thead>
 <tbody id="histB"></tbody></table></div>
 <button class="btn" style="margin-top:12px;font-size:12px;border:1px solid #ddd" onclick="loadHist()">↻ Refresh</button>
 </div></div>
@@ -391,9 +391,22 @@ function loadHist(){
     var h="";for(var i=0;i<j.rows.length;i++){var r=j.rows[i];
       var cf=function(v){return typeof v==="number"?fm(v):v};
       var ot=$(r.other)>0?fm(r.other):"—";var dt=r.details||"—";
-      h+='<tr><td><strong>'+r.quarter+'</strong></td><td>'+r.period+'</td><td class="am">'+cf(r.cellPhone)+'</td><td class="am">'+cf(r.internet)+'</td><td class="am">'+cf(r.mileage)+'</td><td class="am">'+cf(r.homeOffice)+'</td><td class="am">'+ot+'</td><td class="det" title="'+dt+'">'+dt+'</td><td class="am"><strong>'+cf(r.total)+'</strong></td><td style="font-size:11px">'+r.certified+'</td></tr>'}
+      h+='<tr><td><strong>'+r.quarter+'</strong></td><td>'+r.period+'</td><td class="am">'+cf(r.cellPhone)+'</td><td class="am">'+cf(r.internet)+'</td><td class="am">'+cf(r.mileage)+'</td><td class="am">'+cf(r.homeOffice)+'</td><td class="am">'+ot+'</td><td class="det" title="'+dt+'">'+dt+'</td><td class="am"><strong>'+cf(r.total)+'</strong></td><td style="font-size:11px">'+r.certified+'</td><td><button class="xbtn" onclick="delHist(\''+r.quarter.replace(/'/g,"\\'")+'\')">×</button></td></tr>'}
     document.getElementById("histB").innerHTML=h;
   });
+}
+
+function delHist(quarter){
+  if(!confirm("Delete the report for "+quarter+"? This removes it from the Google Sheet."))return;
+  callScript("deleteReport",null).then(function(){
+    // need to pass quarter as param not data
+  });
+  // Use direct URL param approach
+  var url=sUrl+"?action=deleteReport&quarter="+encodeURIComponent(quarter);
+  fetch(url,{redirect:"follow"}).then(function(r){return r.json()}).then(function(j){
+    if(j&&j.success){toast("🗑 "+j.message);loadHist()}
+    else toast("❌ "+(j?j.message:"Delete failed"));
+  }).catch(function(){toast("❌ Delete failed")});
 }
 
 function loadRemoteSettings(){
