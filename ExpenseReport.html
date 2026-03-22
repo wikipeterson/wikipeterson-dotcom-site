@@ -9,44 +9,43 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;background:#F0F2F5;min-height:100vh;color:#333}
 .header{background:linear-gradient(135deg,#1a365d 0%,#2E5090 50%,#3b6eb5 100%);padding:24px 32px;color:#fff}
-.header-inner{max-width:840px;margin:0 auto}
-.header-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.hi{max-width:840px;margin:0 auto}
+.ht{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .header h1{font-size:24px;font-weight:700;letter-spacing:-.5px}
-.header .subtitle{margin-top:4px;opacity:.8;font-size:14px}
-.header-actions{display:flex;gap:8px;flex-wrap:wrap}
+.header .sub{margin-top:4px;opacity:.8;font-size:14px}
+.ha{display:flex;gap:8px;flex-wrap:wrap}
 .btn{padding:8px 16px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-family:'DM Sans',sans-serif;transition:all .2s}
 .btn:disabled{opacity:.5;cursor:not-allowed}
-.btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}
-.btn-ghost:hover:not(:disabled){background:rgba(255,255,255,.25)}
-.btn-dim{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15)}
-.btn-pri{background:#fff;color:#2E5090;font-weight:600}
-.btn-pri:hover:not(:disabled){background:#f0f4ff}
-.btn-xl{width:100%;padding:16px;font-size:16px;font-weight:700;background:#2E5090;color:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(46,80,144,.3)}
-.btn-xl:hover:not(:disabled){background:#1a365d}
-.btn-xl:disabled{background:#94a3b8;box-shadow:none}
+.bg{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.bg:hover:not(:disabled){background:rgba(255,255,255,.25)}
+.bd{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15)}
+.bp{background:#fff;color:#2E5090;font-weight:600}
+.bp:hover:not(:disabled){background:#f0f4ff}
+.bx{width:100%;padding:16px;font-size:16px;font-weight:700;background:#2E5090;color:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(46,80,144,.3)}
+.bx:hover:not(:disabled){background:#1a365d}
+.bx:disabled{background:#94a3b8;box-shadow:none}
 .tabs{display:flex;gap:4px;margin-top:20px;flex-wrap:wrap}
 .tab{padding:10px 20px;border-radius:8px 8px 0 0;border:none;cursor:pointer;font-size:13px;font-weight:600;font-family:inherit;background:rgba(255,255,255,.08);color:rgba(255,255,255,.75)}
 .tab.active{background:#F0F2F5;color:#1a365d}
-.content{max-width:840px;margin:0 auto;padding:24px 32px 60px}
-.panel{display:none;flex-direction:column;gap:20px}
-.panel.active{display:flex}
+.ct{max-width:840px;margin:0 auto;padding:24px 32px 60px}
+.pnl{display:none;flex-direction:column;gap:20px}
+.pnl.active{display:flex}
 .card{background:#fff;border-radius:12px;padding:20px 24px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .card h3{font-size:15px;font-weight:700;color:#1a365d;margin-bottom:8px}
-.card .card-sub{font-size:12px;color:#888;margin-top:-4px;margin-bottom:12px}
+.card .cs{font-size:12px;color:#888;margin-top:-4px;margin-bottom:12px}
 .row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f0f0f0;gap:8px}
 .row label{font-size:13px;font-weight:500;color:#444;white-space:nowrap}
 .rr{display:flex;align-items:center;gap:6px}
-.rr .pre,.rr .suf{font-size:12px;color:#999}
-.rr .suf{min-width:36px}
+.rr .px,.rr .sx{font-size:12px;color:#999}
+.rr .sx{min-width:36px}
 input[type="text"],input[type="number"]{padding:6px 10px;border-radius:6px;border:1px solid #ddd;outline:none;font-size:14px;font-family:'DM Sans',sans-serif}
 input:focus{border-color:#2E5090}
-.inp-t{width:220px;text-align:right}
-.inp-n{width:100px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:14px}
-.inp-p{width:60px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:14px}
+.it{width:220px;text-align:right}
+.inn{width:100px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:14px}
 .res{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;margin-top:4px;border-radius:8px;background:#FAFAFA}
-.res.hi{background:#EEF2FF;border:1px solid #C7D2FE}
+.res.hl{background:#EEF2FF;border:1px solid #C7D2FE}
 .res .rl{font-size:13px;font-weight:600;color:#555}
-.res.hi .rl{color:#1a365d}
+.res.hl .rl{color:#1a365d}
 .res .rv{font-size:15px;font-weight:700;font-family:'JetBrains Mono',monospace;color:#1a365d}
 .srow{display:flex;align-items:center;padding:8px 0;border-bottom:1px solid #f0f0f0}
 .srow.alt{background:#FAFBFD}
@@ -64,8 +63,8 @@ input:focus{border-color:#2E5090}
 .crow .clbl{flex:1;padding:6px 10px;border-radius:6px;border:1px solid #ddd;font-size:13px;font-family:'DM Sans',sans-serif}
 .xbtn{background:none;border:none;cursor:pointer;font-size:18px;color:#cc4444;padding:2px 6px;border-radius:4px;line-height:1}
 .xbtn:hover{background:#FEE2E2}
-.addbtn{margin-top:10px;padding:8px 14px;background:none;border:1px dashed #aac4e0;border-radius:8px;color:#2E5090;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;width:100%}
-.addbtn:hover{background:#F0F5FF;border-color:#2E5090}
+.addb{margin-top:10px;padding:8px 14px;background:none;border:1px dashed #aac4e0;border-radius:8px;color:#2E5090;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;width:100%}
+.addb:hover{background:#F0F5FF;border-color:#2E5090}
 .divd{border-top:2px solid #2E5090;margin-top:14px;padding-top:12px}
 .cert{background:#FFFBEB;border:1px solid #F59E0B;border-radius:10px;padding:16px 20px}
 .cert label{display:flex;align-items:flex-start;gap:12px;cursor:pointer;font-size:13px;color:#92400E;line-height:1.5}
@@ -73,14 +72,6 @@ input:focus{border-color:#2E5090}
 .cert.yes{background:#F0FDF4;border-color:#22C55E}
 .cert.yes label{color:#166534}
 .ctime{font-size:11px;color:#888;margin-top:6px;padding-left:30px}
-.cfgr{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-.cfgr input{flex:1;padding:8px 10px;border-radius:6px;border:1px solid #ddd;font-size:12px;font-family:'JetBrains Mono',monospace}
-.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
-.dot.gn{background:#22C55E}.dot.gy{background:#ccc}
-.help{font-size:11px;color:#888;line-height:1.6;margin-top:8px}
-.help code{background:#f0f0f0;padding:1px 5px;border-radius:3px;font-family:'JetBrains Mono',monospace;font-size:10px}
-.help ol{margin:6px 0 6px 18px}
-.help a{color:#2E5090}
 .htbl{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
 .htbl th{background:#F5F8FC;padding:7px 8px;text-align:left;font-weight:600;color:#1a365d;border-bottom:2px solid #ddd;white-space:nowrap}
 .htbl td{padding:7px 8px;border-bottom:1px solid #f0f0f0}
@@ -91,90 +82,90 @@ input:focus{border-color:#2E5090}
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1a365d;color:#fff;padding:10px 24px;border-radius:8px;font-size:13px;font-weight:500;z-index:999;display:none;box-shadow:0 4px 16px rgba(0,0,0,.2)}
 .toast.show{display:block;animation:tfu .3s ease}
 @keyframes tfu{from{opacity:0;transform:translateX(-50%) translateY(10px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-.pnote{font-size:11px;color:#2E5090;font-weight:500;margin-left:4px}
-.hscroll{overflow-x:auto}
+.hscr{overflow-x:auto}
+.gray-group{background:#F3F4F6;border:1px solid #E5E7EB;border-radius:8px;padding:12px 16px;margin-top:8px}
+.gray-group .gl{font-size:11px;color:#888;margin-bottom:6px;font-weight:500}
+.gray-group .row{border-color:#E5E7EB}
+.gray-group .row label{color:#666}
+.static-val{font-family:'JetBrains Mono',monospace;font-size:14px;color:#666;text-align:right;min-width:100px}
+.edit-row{background:#FFFDF5;border-left:3px solid #F59E0B;padding-left:12px;margin:4px 0;border-radius:0 6px 6px 0}
+.edit-row label{color:#1a365d;font-weight:600}
+.edit-row .inn{border-color:#F59E0B;background:#FFFEF8;font-size:16px;width:110px}
+.edit-row .inn:focus{border-color:#2E5090;box-shadow:0 0 0 2px rgba(46,80,144,.15)}
+.edit-hint{font-size:11px;color:#B45309;font-weight:500;margin-bottom:8px;display:flex;align-items:center;gap:4px}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-inner">
-<div class="header-top">
-<div><h1>Expense Report</h1><div class="subtitle" id="hdrSub"></div></div>
-<div class="header-actions">
-<button class="btn btn-ghost" onclick="doSave()">💾 Save</button>
-<button class="btn btn-dim" onclick="doReset()">↺ Reset</button>
-<button class="btn btn-pri" id="expH" onclick="doExport()" disabled>📄 Export Word Doc</button>
+<div class="header"><div class="hi">
+<div class="ht">
+<div><h1>Expense Report</h1><div class="sub" id="hSub"></div></div>
+<div class="ha">
+<button class="btn bg" onclick="doSave()">💾 Save</button>
+<button class="btn bd" onclick="doReset()">↺ Reset</button>
+<button class="btn bp" id="expH" onclick="doExport()" disabled>📄 Export</button>
 </div></div>
 <div class="tabs">
-<button class="tab active" data-t="setup" onclick="go('setup')">⚙ Setup</button>
-<button class="tab" data-t="home" onclick="go('home')">🏠 Home Office</button>
-<button class="tab" data-t="sum" onclick="go('sum')">📊 Summary</button>
+<button class="tab active" data-t="exp" onclick="go('exp')">💰 Expenses</button>
+<button class="tab" data-t="rev" onclick="go('rev')">📊 Review / Export</button>
 <button class="tab" data-t="hist" onclick="go('hist')">📁 History</button>
+<button class="tab" data-t="set" onclick="go('set')">⚙ Settings</button>
 </div></div></div>
 
-<div class="content">
-<!-- SETUP -->
-<div class="panel active" id="p-setup">
-<div class="card"><h3>Employee & Period</h3>
-<div class="row"><label>Employee Name</label><input type="text" class="inp-t" data-f="name" oninput="tIn(this)"></div>
-<div class="row"><label>Quarter</label><input type="text" class="inp-t" data-f="qtr" oninput="tIn(this)"></div>
-<div class="row"><label>Period</label><input type="text" class="inp-t" data-f="period" oninput="tIn(this)"></div>
-</div>
-<div class="card"><h3>Monthly Recurring Expenses</h3>
-<p class="card-sub">Full monthly bill × business-use percentage</p>
-<div class="row"><label>Cell Phone</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="cell" oninput="nIn(this)"><span class="suf">/mo</span><span class="pnote">×</span><input type="number" class="inp-p" data-f="cellPct" step="1" oninput="nIn(this)"><span class="suf">%</span></div></div>
-<div class="res" id="cellRes"></div>
-<div class="row"><label>Internet</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="inet" oninput="nIn(this)"><span class="suf">/mo</span><span class="pnote">×</span><input type="number" class="inp-p" data-f="inetPct" step="1" oninput="nIn(this)"><span class="suf">%</span></div></div>
-<div class="res" id="inetRes"></div>
-</div>
-<div class="card"><h3>Mileage</h3>
-<div class="row"><label>IRS Rate (2026)</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" step="0.001" data-f="mRate" oninput="nIn(this)"><span class="suf">/mile</span></div></div>
-<div class="row"><label>Total Miles This Quarter</label><div class="rr"><input type="number" class="inp-n" data-f="miles" oninput="nIn(this)"><span class="suf">miles</span></div></div>
-<div class="res" id="miRes"></div>
-</div>
-<div class="card"><h3>Google Sheets Connection</h3>
-<p class="card-sub">Uses Apps Script — no API key needed</p>
-<div class="cfgr"><input type="text" id="urlIn" placeholder="Apps Script Web App URL"><button class="btn btn-pri" onclick="testConn()" style="font-size:12px">Test</button></div>
-<div style="display:flex;align-items:center;gap:6px;font-size:12px;margin-top:4px" id="connSt"><span class="dot gy"></span><span>Not connected</span></div>
-<button class="btn" style="margin-top:10px;font-size:12px;border:1px solid #ddd" onclick="saveUrl()">Save Connection</button>
-<div class="help" style="margin-top:12px">
-<strong>One-time setup (2 min):</strong>
-<ol>
-<li>Open your Google Sheet → Extensions → Apps Script</li>
-<li>Paste the code from <code>AppsScript_ExpenseReport.js</code></li>
-<li>Deploy → New deployment → Web app</li>
-<li>Set "Who has access" to <strong>Anyone</strong>, Deploy</li>
-<li>Copy the Web app URL, paste it above</li>
-</ol>
-The script auto-creates headers and a "Reports" sheet on first run. Same quarter = update, not duplicate.
-</div></div>
+<div class="ct">
+
+<!-- EXPENSES -->
+<div class="pnl active" id="p-exp">
+<div class="card"><h3>Period</h3>
+<div class="row"><label>Quarter</label><input type="text" class="it" data-f="qtr" oninput="tIn(this)"></div>
+<div class="row"><label>Period</label><input type="text" class="it" data-f="period" oninput="tIn(this)"></div>
 </div>
 
-<!-- HOME OFFICE -->
-<div class="panel" id="p-home">
-<div class="card"><h3>Square Footage</h3>
-<div class="row"><label>Total Home</label><div class="rr"><input type="number" class="inp-n" data-f="hSqFt" oninput="nIn(this)"><span class="suf">sq ft</span></div></div>
-<div class="row"><label>Dedicated Office</label><div class="rr"><input type="number" class="inp-n" step="0.01" data-f="oSqFt" oninput="nIn(this)"><span class="suf">sq ft</span></div></div>
-<div class="res hi" id="bpRes"></div>
+<div class="card"><h3>Mileage</h3>
+<div class="edit-hint">✏️ Enter this quarter's miles</div>
+<div class="row edit-row"><label>Total Miles</label><div class="rr"><input type="number" class="inn" data-f="miles" oninput="nIn(this)"><span class="sx">miles</span></div></div>
+<div class="res" id="miRes"></div>
 </div>
-<div class="card"><h3>Monthly Home Costs</h3>
-<p class="card-sub">Enter your actual or estimated monthly amounts</p>
-<div class="row"><label>Mortgage Interest</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="mort" oninput="nIn(this)"><span class="suf">/mo</span></div></div>
-<div class="row"><label>PECO (Electric/Gas)</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="peco" oninput="nIn(this)"><span class="suf">/mo</span></div></div>
-<div class="row"><label>Homeowners Insurance</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="ins" oninput="nIn(this)"><span class="suf">/mo</span></div></div>
-<div class="row"><label>AQUA (Water/Sewer)</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="aqua" oninput="nIn(this)"><span class="suf">/mo</span></div></div>
-<div class="row"><label>Pest Control</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="pest" oninput="nIn(this)"><span class="suf">/mo</span></div></div>
-<div class="row"><label>Cleaning</label><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" data-f="clean" oninput="nIn(this)"><span class="suf">/mo</span></div></div>
+
+<div class="card"><h3>Home Office Costs</h3>
+<p class="cs">Enter actual totals for the quarter — gray items are set in Settings</p>
+<div class="res hl" id="bpRes"></div>
+<div style="height:8px"></div>
+<!-- Variable costs - edit each quarter -->
+<div class="edit-hint">✏️ Update these each quarter</div>
+<div class="row edit-row"><label>PECO (Electric/Gas)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" data-f="peco" oninput="nIn(this)"><span class="sx">/qtr</span></div></div>
+<div class="row edit-row"><label>AQUA (Water/Sewer)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" data-f="aqua" oninput="nIn(this)"><span class="sx">/qtr</span></div></div>
 <div id="custList"></div>
-<button class="addbtn" onclick="addCust()">+ Add expense</button>
+<button class="addb" onclick="addCust()">+ Add expense</button>
+<!-- Stable costs - gray, managed in Settings -->
+<div class="gray-group">
+<div class="gl">Usually the same each quarter — edit in Settings</div>
+<div class="row"><label>Pest Control</label><div class="rr"><span class="static-val" id="pestStatic"></span></div></div>
+<div class="row"><label>Cleaning</label><div class="rr"><span class="static-val" id="cleanStatic"></span></div></div>
+<div class="row"><label>Mortgage Interest</label><div class="rr"><span class="static-val" id="mortStatic"></span></div></div>
+<div class="row"><label>Homeowners Insurance</label><div class="rr"><span class="static-val" id="insStatic"></span></div></div>
+<div class="row"><label>Property Taxes</label><div class="rr"><span class="static-val" id="taxStatic"></span></div></div>
+</div>
 <div class="divd">
 <div class="res" id="thRes"></div>
 <div class="res" id="opRes"></div>
-<div class="res hi" id="oqRes"></div>
+<div class="res hl" id="oqRes"></div>
 </div></div>
+
+<div class="card">
+<h3>Cell Phone & Internet</h3>
+<p class="cs">Monthly rates set in Settings — quarterly amounts shown here</p>
+<div class="gray-group">
+<div class="gl">Monthly charges set in Settings</div>
+<div class="row"><label>Cell Phone</label><div class="rr"><span class="static-val" id="cellStatic"></span></div></div>
+<div class="res" id="cellRes"></div>
+<div class="row"><label>Internet</label><div class="rr"><span class="static-val" id="inetStatic"></span></div></div>
+<div class="res" id="inetRes"></div>
+</div>
+</div>
 </div>
 
-<!-- SUMMARY -->
-<div class="panel" id="p-sum">
+<!-- REVIEW / EXPORT -->
+<div class="pnl" id="p-rev">
 <div class="hero"><div class="hl">Quarterly Total</div><div class="hv" id="heroT"></div><div class="hs" id="heroS"></div></div>
 <div class="card"><h3>Expense Breakdown</h3><div id="sumBrk"></div><div class="totl"><span>TOTAL</span><span class="tv" id="sumGT"></span></div></div>
 <div class="card"><h3>Home Office Detail</h3><div id="sumHD"></div><div class="totl sm" id="sumHT"></div></div>
@@ -182,55 +173,109 @@ The script auto-creates headers and a "Reports" sheet on first run. Same quarter
 <label><input type="checkbox" id="certCk" onchange="onCert()">
 <span>I, <strong id="certNm"></strong>, certify that the above expenses were incurred for legitimate business purposes and that the amounts listed are accurate to the best of my knowledge.</span></label>
 <div class="ctime" id="certTs"></div></div>
-<button class="btn btn-xl" id="expB" onclick="doExport()" disabled>📄 Export as Word Document</button>
-<div style="text-align:center;font-size:11px;color:#888;margin-top:-12px" id="expHint">Check the certification box above to enable export</div>
+<button class="btn bx" id="expB" onclick="doExport()" disabled>📄 Export as Word Document</button>
+<div style="text-align:center;font-size:11px;color:#888;margin-top:-12px" id="expHint">Check the certification box to enable export</div>
 </div>
 
 <!-- HISTORY -->
-<div class="panel" id="p-hist">
-<div class="card"><h3>Past Expense Reports</h3><p class="card-sub">Pulled from your Google Sheet</p>
-<div id="histE" class="empty"><p>Connect to Apps Script in Setup to view past reports.</p></div>
-<div class="hscroll"><table class="htbl" id="histT" style="display:none">
+<div class="pnl" id="p-hist">
+<div class="card"><h3>Past Expense Reports</h3><p class="cs">Pulled from your Google Sheet</p>
+<div id="histE" class="empty"><p>Loading...</p></div>
+<div class="hscr"><table class="htbl" id="histT" style="display:none">
 <thead><tr><th>Quarter</th><th>Period</th><th style="text-align:right">Cell</th><th style="text-align:right">Internet</th><th style="text-align:right">Mileage</th><th style="text-align:right">Home Office</th><th style="text-align:right">Other</th><th>Details</th><th style="text-align:right">Total</th><th>Certified</th></tr></thead>
 <tbody id="histB"></tbody></table></div>
 <button class="btn" style="margin-top:12px;font-size:12px;border:1px solid #ddd" onclick="loadHist()">↻ Refresh</button>
 </div></div>
+
+<!-- SETTINGS -->
+<div class="pnl" id="p-set">
+<div class="card"><h3>Monthly Bills & Business Use</h3>
+<p class="cs">Set your monthly charges — quarterly amounts are calculated automatically</p>
+<div class="row"><label>Cell Phone (monthly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_cellMo" step="0.01" value="62.97"><span class="sx">/mo</span></div></div>
+<div class="row"><label>Cell Phone Business Use</label><div class="rr"><input type="number" class="inn" id="s_cellPct" step="1" value="60"><span class="sx">%</span></div></div>
+<div class="row"><label>Internet (monthly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_inetMo" step="0.01" value="84.99"><span class="sx">/mo</span></div></div>
+<div class="row"><label>Internet Business Use</label><div class="rr"><input type="number" class="inn" id="s_inetPct" step="1" value="50"><span class="sx">%</span></div></div>
+</div>
+<div class="card"><h3>Mileage Rate</h3>
+<div class="row"><label>IRS Rate per Mile</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_mRate" step="0.001" value="0.725"><span class="sx">/mile</span></div></div>
+</div>
+<div class="card"><h3>Home Office Square Footage</h3>
+<div class="row"><label>Total Home</label><div class="rr"><input type="number" class="inn" id="s_hSqFt" value="2162"><span class="sx">sq ft</span></div></div>
+<div class="row"><label>Dedicated Office</label><div class="rr"><input type="number" class="inn" id="s_oSqFt" step="0.01" value="155.75"><span class="sx">sq ft</span></div></div>
+<div class="res hl" id="sBpRes"></div>
+</div>
+<div class="card"><h3>Stable Quarterly Costs</h3>
+<p class="cs">These usually stay the same — update here when they change</p>
+<div class="row"><label>Pest Control (quarterly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_pest" value="167"><span class="sx">/qtr</span></div></div>
+<div class="row"><label>Cleaning (quarterly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_clean" value="720"><span class="sx">/qtr</span></div></div>
+<div class="row"><label>Mortgage Interest (quarterly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_mort" value="2715"><span class="sx">/qtr</span></div></div>
+<div class="row"><label>Homeowners Insurance (quarterly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_ins" value="543"><span class="sx">/qtr</span></div></div>
+<div class="row"><label>Property Taxes (quarterly)</label><div class="rr"><span class="px">$</span><input type="number" class="inn" id="s_propTax" value="2430"><span class="sx">/qtr</span></div></div>
+</div>
+<button class="btn bx" onclick="saveAllSettings()" style="margin-top:4px">💾 Save All Settings</button>
 </div>
 
+</div>
 <div class="toast" id="toast"></div>
 
 <script>
-var K="amy-exp-v6",CK="amy-url";
-var DEF={name:"Amy Peterson",qtr:"Q1 2026",period:"January – March 2026",hSqFt:2162,oSqFt:144.75,mort:2200,peco:225,ins:135,aqua:55,pest:45,clean:120,cell:85,cellPct:60,inet:75,inetPct:50,mRate:.725,miles:420,cust:[],cert:false,certAt:""};
-var FX=[{l:"Mortgage Interest",k:"mort"},{l:"PECO (Electric/Gas)",k:"peco"},{l:"Homeowners Insurance",k:"ins"},{l:"AQUA (Water/Sewer)",k:"aqua"},{l:"Pest Control",k:"pest"},{l:"Cleaning",k:"clean"}];
-var D=JSON.parse(JSON.stringify(DEF)),sUrl="https://script.google.com/macros/s/AKfycby__7yN5JNr6912aPBRmzZy1LXaci3sehQNRQuhiAEY8EW_4-HxTeABqnALbAYVzTUb/exec";
+var K="amy-exp-v8",CK="amy-url",SK="amy-settings-v3";
+var SCRIPT_URL="https://script.google.com/macros/s/AKfycby__7yN5JNr6912aPBRmzZy1LXaci3sehQNRQuhiAEY8EW_4-HxTeABqnALbAYVzTUb/exec";
+
+function autoQuarter(){
+  var now=new Date(),m=now.getMonth(),y=now.getFullYear();
+  var q=Math.floor(m/3)+1;
+  var names=[["January","February","March"],["April","May","June"],["July","August","September"],["October","November","December"]];
+  var mn=names[q-1];
+  return{qtr:"Q"+q+" "+y,period:mn[0]+" – "+mn[2]+" "+y};
+}
+
+var aq=autoQuarter();
+var DEF={name:"Amy Peterson",qtr:aq.qtr,period:aq.period,peco:675,aqua:165,miles:420,cust:[],cert:false,certAt:""};
+var SDEF={cellMo:62.97,cellPct:60,inetMo:84.99,inetPct:50,mRate:0.725,hSqFt:2162,oSqFt:155.75,pest:167,clean:720,mort:2715,ins:543,propTax:2430};
+var FX_VAR=[{l:"PECO (Electric/Gas)",k:"peco"},{l:"AQUA (Water/Sewer)",k:"aqua"}];
+var FX_STABLE=[{l:"Pest Control",k:"pest"},{l:"Cleaning",k:"clean"},{l:"Mortgage Interest",k:"mort"},{l:"Homeowners Insurance",k:"ins"},{l:"Property Taxes",k:"propTax"}];
+var D=JSON.parse(JSON.stringify(DEF)),S=JSON.parse(JSON.stringify(SDEF)),sUrl=SCRIPT_URL;
 
 function sv(){try{localStorage.setItem(K,JSON.stringify(D))}catch(e){}}
-function ld(){try{var r=localStorage.getItem(K);if(r){var p=JSON.parse(r);D=Object.assign({},DEF,p);D.cust=p.cust||[]}}catch(e){}try{var u=localStorage.getItem(CK);if(u)sUrl=u}catch(e){}}
+function svS(){try{localStorage.setItem(SK,JSON.stringify(S))}catch(e){}}
+function ld(){
+  try{var r=localStorage.getItem(K);if(r){var p=JSON.parse(r);D=Object.assign({},DEF,p);D.cust=p.cust||[]}}catch(e){}
+  try{var r=localStorage.getItem(SK);if(r){S=Object.assign({},SDEF,JSON.parse(r))}}catch(e){}
+  try{var u=localStorage.getItem(CK);if(u)sUrl=u}catch(e){}
+}
 var $=function(n){return Number(n||0)};
 var fm=function(n){return "$"+$(n).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,",")};
 var fp=function(n){return ($(n)*100).toFixed(1)+"%"};
 var fi=function(n){return Math.round($(n))+"%"};
 
 function calc(){
-  var bp=D.hSqFt>0?D.oSqFt/D.hSqFt:0;
-  var cB=$(D.cellPct)/100,iB=$(D.inetPct)/100;
-  var cMo=$(D.cell)*cB,iMo=$(D.inet)*iB,cQ=cMo*3,iQ=iMo*3;
-  var ft=0;for(var i=0;i<FX.length;i++)ft+=$(D[FX[i].k]);
-  var ct=0;for(var i=0;i<D.cust.length;i++)ct+=$(D.cust[i].amt);
-  var th=ft+ct,om=th*bp,oq=om*3;
+  var bp=S.hSqFt>0?S.oSqFt/S.hSqFt:0;
+  var cQ=$(S.cellMo)*3*$(S.cellPct)/100;
+  var iQ=$(S.inetMo)*3*$(S.inetPct)/100;
+  // Variable home costs from D (entered each quarter)
+  var varTotal=0;for(var i=0;i<FX_VAR.length;i++)varTotal+=$(D[FX_VAR[i].k]);
+  var custTotal=0;for(var i=0;i<D.cust.length;i++)custTotal+=$(D.cust[i].amt);
+  // Stable home costs from S (set in settings)
+  var stabTotal=0;for(var i=0;i<FX_STABLE.length;i++)stabTotal+=$(S[FX_STABLE[i].k]);
+  var th=varTotal+custTotal+stabTotal;
+  var oq=th*bp;
   var oQ=0,ci=[];
-  for(var i=0;i<D.cust.length;i++){if(D.cust[i].lbl){oQ+=$(D.cust[i].amt)*bp*3;ci.push(D.cust[i])}}
-  var od=ci.map(function(e){return e.lbl+": "+fm($(e.amt))+"/mo"}).join(", ");
-  var ml=$(D.miles)*$(D.mRate),gr=oq+cQ+iQ+ml;
-  var ah=FX.map(function(e){return{l:e.l,a:$(D[e.k])}}).concat(ci.map(function(e){return{l:e.lbl,a:$(e.amt)}}));
-  return{bp:bp,cMo:cMo,iMo:iMo,cQ:cQ,iQ:iQ,th:th,om:om,oq:oq,ml:ml,gr:gr,ah:ah,oQ:oQ,od:od};
+  for(var i=0;i<D.cust.length;i++){if(D.cust[i].lbl){oQ+=$(D.cust[i].amt)*bp;ci.push(D.cust[i])}}
+  var od=ci.map(function(e){return e.lbl+": "+fm($(e.amt))+"/qtr"}).join(", ");
+  var ml=$(D.miles)*$(S.mRate),gr=oq+cQ+iQ+ml;
+  // All home items for summary
+  var ah=FX_VAR.map(function(e){return{l:e.l,a:$(D[e.k])}});
+  ah=ah.concat(ci.map(function(e){return{l:e.lbl,a:$(e.amt)}}));
+  ah=ah.concat(FX_STABLE.map(function(e){return{l:e.l,a:$(S[e.k])}}));
+  return{bp:bp,cQ:cQ,iQ:iQ,th:th,oq:oq,ml:ml,gr:gr,ah:ah,oQ:oQ,od:od};
 }
 
 function go(id){
   document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t.getAttribute('data-t')===id)});
-  document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('active',p.id==='p-'+id)});
+  document.querySelectorAll('.pnl').forEach(function(p){p.classList.toggle('active',p.id==='p-'+id)});
   if(id==='hist')loadHist();
+  if(id==='set')loadSettingsUI();
   render();
 }
 function tIn(el){D[el.getAttribute('data-f')]=el.value;unc();sv();render()}
@@ -241,28 +286,81 @@ function updCust(id,f,v){for(var i=0;i<D.cust.length;i++){if(D.cust[i].id===id){
 function rmCust(id){D.cust=D.cust.filter(function(e){return e.id!==id});unc();sv();render()}
 function onCert(){var ch=document.getElementById("certCk").checked;D.cert=ch;D.certAt=ch?new Date().toLocaleString():"";sv();render()}
 
+function loadSettingsUI(){
+  document.getElementById("s_cellMo").value=S.cellMo;
+  document.getElementById("s_cellPct").value=S.cellPct;
+  document.getElementById("s_inetMo").value=S.inetMo;
+  document.getElementById("s_inetPct").value=S.inetPct;
+  document.getElementById("s_mRate").value=S.mRate;
+  document.getElementById("s_hSqFt").value=S.hSqFt;
+  document.getElementById("s_oSqFt").value=S.oSqFt;
+  document.getElementById("s_pest").value=S.pest;
+  document.getElementById("s_clean").value=S.clean;
+  document.getElementById("s_mort").value=S.mort;
+  document.getElementById("s_ins").value=S.ins;
+  document.getElementById("s_propTax").value=S.propTax;
+  var bp=S.hSqFt>0?S.oSqFt/S.hSqFt:0;
+  document.getElementById("sBpRes").innerHTML='<span class="rl">Business Use %</span><span class="rv">'+fp(bp)+'</span>';
+}
+
+function saveAllSettings(){
+  S.cellMo=parseFloat(document.getElementById("s_cellMo").value)||0;
+  S.cellPct=parseFloat(document.getElementById("s_cellPct").value)||0;
+  S.inetMo=parseFloat(document.getElementById("s_inetMo").value)||0;
+  S.inetPct=parseFloat(document.getElementById("s_inetPct").value)||0;
+  S.mRate=parseFloat(document.getElementById("s_mRate").value)||0;
+  S.hSqFt=parseFloat(document.getElementById("s_hSqFt").value)||0;
+  S.oSqFt=parseFloat(document.getElementById("s_oSqFt").value)||0;
+  S.pest=parseFloat(document.getElementById("s_pest").value)||0;
+  S.clean=parseFloat(document.getElementById("s_clean").value)||0;
+  S.mort=parseFloat(document.getElementById("s_mort").value)||0;
+  S.ins=parseFloat(document.getElementById("s_ins").value)||0;
+  S.propTax=parseFloat(document.getElementById("s_propTax").value)||0;
+  svS();unc();sv();
+  if(sUrl){
+    callScript("saveSettings",{cellMo:S.cellMo,cellBizPct:S.cellPct,inetMo:S.inetMo,internetBizPct:S.inetPct,mileageRate:S.mRate,homeSqFt:S.hSqFt,officeSqFt:S.oSqFt,pest:S.pest,clean:S.clean,mort:S.mort,ins:S.ins,propTax:S.propTax}).then(function(r){
+      if(r&&r.success)toast("✅ Settings saved");else toast("💾 Saved locally");
+    });
+  }else{toast("💾 Saved locally")}
+  loadSettingsUI();render();
+}
+
 function render(){
   var c=calc();
-  document.getElementById("hdrSub").textContent=D.name+" · "+D.qtr;
+  document.getElementById("hSub").textContent=D.name+" · "+D.qtr;
   document.querySelectorAll("[data-f]").forEach(function(el){if(document.activeElement===el)return;el.value=D[el.getAttribute('data-f')]!=null?D[el.getAttribute('data-f')]:""});
-  document.getElementById("cellRes").innerHTML='<span class="rl">Cell business portion ('+fi(D.cellPct)+')</span><span class="rv">'+fm(c.cMo)+'/mo → '+fm(c.cQ)+'/qtr</span>';
-  document.getElementById("inetRes").innerHTML='<span class="rl">Internet business portion ('+fi(D.inetPct)+')</span><span class="rv">'+fm(c.iMo)+'/mo → '+fm(c.iQ)+'/qtr</span>';
-  document.getElementById("miRes").innerHTML='<span class="rl">Mileage Reimbursement</span><span class="rv">'+fm(c.ml)+'</span>';
-  document.getElementById("bpRes").innerHTML='<span class="rl">Business Use %</span><span class="rv">'+fp(c.bp)+'</span>';
-  document.getElementById("thRes").innerHTML='<span class="rl">Total Home (monthly)</span><span class="rv">'+fm(c.th)+'</span>';
-  document.getElementById("opRes").innerHTML='<span class="rl">Office Portion ('+fp(c.bp)+')</span><span class="rv">'+fm(c.om)+'</span>';
-  document.getElementById("oqRes").innerHTML='<span class="rl">Office Quarterly</span><span class="rv">'+fm(c.oq)+'</span>';
-  var cl="";for(var i=0;i<D.cust.length;i++){var e=D.cust[i];cl+='<div class="crow"><input class="clbl" value="'+e.lbl.replace(/"/g,'&quot;')+'" placeholder="Description (e.g. Lawn care)" oninput="updCust('+e.id+',\'lbl\',this.value)"><div class="rr"><span class="pre">$</span><input type="number" class="inp-n" value="'+e.amt+'" oninput="updCust('+e.id+',\'amt\',this.value)"><span class="suf">/mo</span></div><button class="xbtn" onclick="rmCust('+e.id+')">×</button></div>'}
+  // Cell & Internet static display
+  var cellQtr=$(S.cellMo)*3;
+  var inetQtr=$(S.inetMo)*3;
+  document.getElementById("cellStatic").textContent=fm(S.cellMo)+"/mo × 3 = "+fm(cellQtr)+"/qtr";
+  document.getElementById("inetStatic").textContent=fm(S.inetMo)+"/mo × 3 = "+fm(inetQtr)+"/qtr";
+  document.getElementById("cellRes").innerHTML='<span class="rl">Business portion ('+fi(S.cellPct)+')</span><span class="rv">'+fm(c.cQ)+'</span>';
+  document.getElementById("inetRes").innerHTML='<span class="rl">Business portion ('+fi(S.inetPct)+')</span><span class="rv">'+fm(c.iQ)+'</span>';
+  document.getElementById("miRes").innerHTML='<span class="rl">Mileage @ $'+$(S.mRate).toFixed(3)+'/mi</span><span class="rv">'+fm(c.ml)+'</span>';
+  document.getElementById("bpRes").innerHTML='<span class="rl">'+S.oSqFt+' / '+$(S.hSqFt).toLocaleString()+' sq ft = '+fp(c.bp)+' business use</span><span class="rv">'+fp(c.bp)+'</span>';
+  document.getElementById("thRes").innerHTML='<span class="rl">Total Home (quarterly)</span><span class="rv">'+fm(c.th)+'</span>';
+  document.getElementById("opRes").innerHTML='<span class="rl">Office Portion ('+fp(c.bp)+')</span><span class="rv">'+fm(c.oq)+'</span>';
+  document.getElementById("oqRes").innerHTML='<span class="rl">Office Quarterly Total</span><span class="rv">'+fm(c.oq)+'</span>';
+  // Gray group static values
+  document.getElementById("pestStatic").textContent=fm(S.pest)+"/qtr";
+  document.getElementById("cleanStatic").textContent=fm(S.clean)+"/qtr";
+  document.getElementById("mortStatic").textContent=fm(S.mort)+"/qtr";
+  document.getElementById("insStatic").textContent=fm(S.ins)+"/qtr";
+  document.getElementById("taxStatic").textContent=fm(S.propTax)+"/qtr";
+  // Custom expenses
+  var cl="";for(var i=0;i<D.cust.length;i++){var e=D.cust[i];cl+='<div class="crow"><input class="clbl" value="'+e.lbl.replace(/"/g,'&quot;')+'" placeholder="Description (e.g. Lawn care)" oninput="updCust('+e.id+',\'lbl\',this.value)"><div class="rr"><span class="px">$</span><input type="number" class="inn" value="'+e.amt+'" oninput="updCust('+e.id+',\'amt\',this.value)"><span class="sx">/qtr</span></div><button class="xbtn" onclick="rmCust('+e.id+')">×</button></div>'}
   document.getElementById("custList").innerHTML=cl;
+  // Review
   document.getElementById("heroT").textContent=fm(c.gr);
   document.getElementById("heroS").textContent=D.qtr+" · "+D.period;
-  var bk=[{l:"Cell Phone ("+fi(D.cellPct)+" of "+fm(D.cell)+")",m:fm(c.cMo),q:fm(c.cQ),a:0},{l:"Internet ("+fi(D.inetPct)+" of "+fm(D.inet)+")",m:fm(c.iMo),q:fm(c.iQ),a:1},{l:"Mileage ("+$(D.miles).toLocaleString()+" mi)",m:"—",q:fm(c.ml),a:0},{l:"Home Office ("+fp(c.bp)+")",m:fm(c.om),q:fm(c.oq),a:1}];
-  var bh="";for(var i=0;i<bk.length;i++){bh+='<div class="srow'+(bk[i].a?' alt':'')+'"><span class="sl">'+bk[i].l+'</span><span class="sm">'+bk[i].m+'</span><span class="sq">'+bk[i].q+'</span></div>'}
+  var bk=[{l:"Cell Phone ("+fi(S.cellPct)+" of "+fm(cellQtr)+")",q:fm(c.cQ),a:0},{l:"Internet ("+fi(S.inetPct)+" of "+fm(inetQtr)+")",q:fm(c.iQ),a:1},{l:"Mileage ("+$(D.miles).toLocaleString()+" mi)",q:fm(c.ml),a:0},{l:"Home Office ("+fp(c.bp)+")",q:fm(c.oq),a:1}];
+  var bh="";for(var i=0;i<bk.length;i++){bh+='<div class="srow'+(bk[i].a?' alt':'')+'"><span class="sl">'+bk[i].l+'</span><span class="sq">'+bk[i].q+'</span></div>'}
   document.getElementById("sumBrk").innerHTML=bh;
   document.getElementById("sumGT").textContent=fm(c.gr);
-  var hd="";for(var i=0;i<c.ah.length;i++){hd+='<div class="srow'+(i%2===1?' alt':'')+'"><span class="sl">'+c.ah[i].l+'</span><span class="sm">'+fm(c.ah[i].a)+'</span><span class="sq">'+fm(c.ah[i].a*c.bp*3)+'</span></div>'}
+  var hd="";for(var i=0;i<c.ah.length;i++){hd+='<div class="srow'+(i%2===1?' alt':'')+'"><span class="sl">'+c.ah[i].l+'</span><span class="sm">'+fm(c.ah[i].a)+'</span><span class="sq">'+fm(c.ah[i].a*c.bp)+'</span></div>'}
   document.getElementById("sumHD").innerHTML=hd;
-  document.getElementById("sumHT").innerHTML='<span>Home Office Total ('+fp(c.bp)+' of '+fm(c.th)+'/mo)</span><span class="tv">'+fm(c.oq)+'</span>';
+  document.getElementById("sumHT").innerHTML='<span>Home Office Total ('+fp(c.bp)+' of '+fm(c.th)+')</span><span class="tv">'+fm(c.oq)+'</span>';
+  // Cert
   document.getElementById("certCk").checked=D.cert;
   document.getElementById("certNm").textContent=D.name;
   var cb=document.getElementById("certBox");if(D.cert)cb.classList.add("yes");else cb.classList.remove("yes");
@@ -270,49 +368,52 @@ function render(){
   document.getElementById("expB").disabled=!D.cert;
   document.getElementById("expH").disabled=!D.cert;
   document.getElementById("expHint").style.display=D.cert?"none":"block";
-  document.getElementById("urlIn").value=sUrl||"";
-  var cs=document.getElementById("connSt");
-  cs.innerHTML=sUrl?'<span class="dot gn"></span><span>URL saved</span>':'<span class="dot gy"></span><span>Not connected</span>';
 }
 
 function toast(m){var e=document.getElementById("toast");e.textContent=m;e.classList.add("show");setTimeout(function(){e.classList.remove("show")},3000)}
-function doSave(){sv();toast("💾 Saved!")}
-function doReset(){if(confirm("Reset all fields to defaults?")){D=JSON.parse(JSON.stringify(DEF));D.cust=[];sv();render();toast("↺ Reset")}}
-function saveUrl(){sUrl=document.getElementById("urlIn").value.trim();localStorage.setItem(CK,sUrl);toast("Saved URL");render()}
-
-function testConn(){
-  sUrl=document.getElementById("urlIn").value.trim();
-  if(!sUrl){toast("⚠ Enter the Web App URL");return}
-  fetch(sUrl+"?action=ping").then(function(r){return r.json()}).then(function(j){
-    if(j.success){localStorage.setItem(CK,sUrl);toast('✅ Connected to "'+j.sheetName+'"');document.getElementById("connSt").innerHTML='<span class="dot gn"></span><span>Connected to '+j.sheetName+'</span>'}
-    else toast("❌ "+j.message);
-  }).catch(function(){toast("❌ Connection failed")});
-}
+function doSave(){sv();svS();toast("💾 Saved!")}
+function doReset(){if(confirm("Reset expense fields to defaults for a new quarter? (Settings are kept)")){var nq=autoQuarter();D=JSON.parse(JSON.stringify(DEF));D.qtr=nq.qtr;D.period=nq.period;D.cust=[];sv();render();toast("↺ Reset for new quarter")}}
 
 function callScript(action,data){
   if(!sUrl)return Promise.resolve(null);
   var url=sUrl+"?action="+action+(data?"&data="+encodeURIComponent(JSON.stringify(data)):"");
-  return fetch(url,{redirect:"follow"}).then(function(r){
-    if(!r.ok)throw new Error("HTTP "+r.status);
-    return r.json();
-  }).catch(function(e){console.error("callScript error:",e);return null});
+  return fetch(url,{redirect:"follow"}).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).catch(function(e){console.error(e);return null});
 }
 
 function loadHist(){
   if(!sUrl){document.getElementById("histE").style.display="block";document.getElementById("histT").style.display="none";return}
-  document.getElementById("histE").innerHTML='<p>Loading...</p>';
-  document.getElementById("histE").style.display="block";
+  document.getElementById("histE").innerHTML='<p>Loading...</p>';document.getElementById("histE").style.display="block";
   callScript("history").then(function(j){
     if(!j||!j.success||!j.rows||!j.rows.length){
       document.getElementById("histE").style.display="block";document.getElementById("histT").style.display="none";
-      document.getElementById("histE").innerHTML=j&&j.success?'<p>No past reports yet.</p>':'<p style="color:#cc4444">Error connecting. Check Setup tab.</p>';return}
+      document.getElementById("histE").innerHTML=j&&j.success?'<p>No past reports yet.</p>':'<p style="color:#cc4444">Error connecting.</p>';return}
     document.getElementById("histE").style.display="none";document.getElementById("histT").style.display="table";
     var h="";for(var i=0;i<j.rows.length;i++){var r=j.rows[i];
       var cf=function(v){return typeof v==="number"?fm(v):v};
-      var ot=$(r.other)>0?fm(r.other):"—";
-      var dt=r.details||"—";
+      var ot=$(r.other)>0?fm(r.other):"—";var dt=r.details||"—";
       h+='<tr><td><strong>'+r.quarter+'</strong></td><td>'+r.period+'</td><td class="am">'+cf(r.cellPhone)+'</td><td class="am">'+cf(r.internet)+'</td><td class="am">'+cf(r.mileage)+'</td><td class="am">'+cf(r.homeOffice)+'</td><td class="am">'+ot+'</td><td class="det" title="'+dt+'">'+dt+'</td><td class="am"><strong>'+cf(r.total)+'</strong></td><td style="font-size:11px">'+r.certified+'</td></tr>'}
     document.getElementById("histB").innerHTML=h;
+  });
+}
+
+function loadRemoteSettings(){
+  callScript("getSettings").then(function(r){
+    if(r&&r.success&&r.settings){
+      var s=r.settings;
+      if(s.cellMo!=null)S.cellMo=parseFloat(s.cellMo)||S.cellMo;
+      if(s.cellBizPct!=null)S.cellPct=parseFloat(s.cellBizPct)||S.cellPct;
+      if(s.inetMo!=null)S.inetMo=parseFloat(s.inetMo)||S.inetMo;
+      if(s.internetBizPct!=null)S.inetPct=parseFloat(s.internetBizPct)||S.inetPct;
+      if(s.mileageRate!=null)S.mRate=parseFloat(s.mileageRate)||S.mRate;
+      if(s.homeSqFt!=null)S.hSqFt=parseFloat(s.homeSqFt)||S.hSqFt;
+      if(s.officeSqFt!=null)S.oSqFt=parseFloat(s.officeSqFt)||S.oSqFt;
+      if(s.pest!=null)S.pest=parseFloat(s.pest)||S.pest;
+      if(s.clean!=null)S.clean=parseFloat(s.clean)||S.clean;
+      if(s.mort!=null)S.mort=parseFloat(s.mort)||S.mort;
+      if(s.ins!=null)S.ins=parseFloat(s.ins)||S.ins;
+      if(s.propTax!=null)S.propTax=parseFloat(s.propTax)||S.propTax;
+      svS();render();
+    }
   });
 }
 
@@ -324,29 +425,28 @@ function doExport(){
       if(r&&r.success)toast("✅ "+r.message+" & downloading…");else toast("⚠ Sheet issue, downloading…");
     });
   }
-  var hr="";for(var i=0;i<c.ah.length;i++){var e=c.ah[i];hr+='<tr '+(i%2===1?'class="alt"':'')+'><td>'+e.l+'</td><td class="amount">'+fm(e.a)+'</td><td class="amount">'+fm(e.a*c.bp)+'</td><td class="amount">'+fm(e.a*c.bp*3)+'</td></tr>'}
+  var hr="";for(var i=0;i<c.ah.length;i++){var e=c.ah[i];hr+='<tr '+(i%2===1?'class="alt"':'')+'><td>'+e.l+'</td><td class="amount">'+fm(e.a)+'</td><td class="amount">'+fm(e.a*c.bp)+'</td></tr>'}
   var doc='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>Expense Report</title><style>@page{size:8.5in 11in;margin:1in}body{font-family:Arial,sans-serif;color:#333;line-height:1.5}h1{color:#2E5090;font-size:22pt;margin-bottom:4pt;text-align:center}h2{color:#2E5090;font-size:14pt;margin-top:20pt;margin-bottom:8pt;border-bottom:2px solid #2E5090;padding-bottom:4pt}.subtitle{text-align:center;color:#666;font-size:12pt;margin-bottom:20pt}table{border-collapse:collapse;width:100%;margin:8pt 0}th{background:#2E5090;color:white;padding:6pt 10pt;text-align:center;font-size:10pt}td{border:1px solid #ccc;padding:5pt 10pt;font-size:10pt}.alt{background:#F5F8FC}.total-row{background:#E8EDF5;font-weight:bold}.total-row td{border-top:2px solid #2E5090}.amount{text-align:right}.info-table td{border:none;padding:3pt 8pt}.info-label{font-weight:bold;color:#2E5090;width:140pt}.note{font-size:9pt;color:#888;font-style:italic}.cert{background:#F0FDF4;border:1px solid #86EFAC;border-radius:4pt;padding:8pt 12pt;margin-top:16pt;font-size:10pt}</style></head><body>';
+  var cellQtr=$(S.cellMo)*3,inetQtr=$(S.inetMo)*3;
   doc+='<h1>QUARTERLY EXPENSE REPORT</h1><p class="subtitle">'+D.qtr+' &bull; '+D.period+'</p>';
   doc+='<table class="info-table"><tr><td class="info-label">Employee:</td><td>'+D.name+'</td></tr><tr><td class="info-label">Period:</td><td>'+D.period+'</td></tr><tr><td class="info-label">Certified:</td><td>'+D.certAt+'</td></tr></table>';
-  doc+='<h2>1. Expense Summary</h2><table><tr><th>Expense Category</th><th>Monthly (Biz)</th><th>Quarterly</th><th>Notes</th></tr>';
-  doc+='<tr><td><b>Cell Phone</b></td><td class="amount">'+fm(c.cMo)+'</td><td class="amount">'+fm(c.cQ)+'</td><td>'+fi(D.cellPct)+' of '+fm(D.cell)+'/mo</td></tr>';
-  doc+='<tr class="alt"><td><b>Internet Service</b></td><td class="amount">'+fm(c.iMo)+'</td><td class="amount">'+fm(c.iQ)+'</td><td>'+fi(D.inetPct)+' of '+fm(D.inet)+'/mo</td></tr>';
-  doc+='<tr><td><b>Mileage ('+$(D.miles).toLocaleString()+' mi @ $'+$(D.mRate).toFixed(3)+'/mi)</b></td><td class="amount">&mdash;</td><td class="amount">'+fm(c.ml)+'</td><td>IRS 2026 rate</td></tr>';
-  doc+='<tr class="alt"><td><b>Home Office (see below)</b></td><td class="amount">'+fm(c.om)+'</td><td class="amount">'+fm(c.oq)+'</td><td>'+fp(c.bp)+' of home</td></tr>';
-  doc+='<tr class="total-row"><td>TOTAL</td><td></td><td class="amount">'+fm(c.gr)+'</td><td></td></tr></table>';
-  doc+='<h2>2. Home Office Deduction Breakdown</h2><p><b>Method:</b> Regular method &mdash; '+D.oSqFt+' sq ft office &divide; '+$(D.hSqFt).toLocaleString()+' sq ft home = <b>'+fp(c.bp)+'</b> business use.</p>';
-  doc+='<table><tr><th>Home Expense</th><th>Monthly Total</th><th>'+fp(c.bp)+' Office</th><th>Quarterly</th></tr>'+hr;
-  doc+='<tr class="total-row"><td>HOME OFFICE TOTAL</td><td class="amount">'+fm(c.th)+'</td><td class="amount">'+fm(c.om)+'</td><td class="amount">'+fm(c.oq)+'</td></tr></table>';
+  doc+='<h2>1. Expense Summary</h2><table><tr><th>Expense Category</th><th>Quarterly</th><th>Notes</th></tr>';
+  doc+='<tr><td><b>Cell Phone</b></td><td class="amount">'+fm(c.cQ)+'</td><td>'+fi(S.cellPct)+' of '+fm(cellQtr)+' ('+fm(S.cellMo)+'/mo × 3)</td></tr>';
+  doc+='<tr class="alt"><td><b>Internet Service</b></td><td class="amount">'+fm(c.iQ)+'</td><td>'+fi(S.inetPct)+' of '+fm(inetQtr)+' ('+fm(S.inetMo)+'/mo × 3)</td></tr>';
+  doc+='<tr><td><b>Mileage ('+$(D.miles).toLocaleString()+' mi @ $'+$(S.mRate).toFixed(3)+'/mi)</b></td><td class="amount">'+fm(c.ml)+'</td><td>IRS 2026 rate</td></tr>';
+  doc+='<tr class="alt"><td><b>Home Office (see below)</b></td><td class="amount">'+fm(c.oq)+'</td><td>'+fp(c.bp)+' of home</td></tr>';
+  doc+='<tr class="total-row"><td>TOTAL</td><td class="amount">'+fm(c.gr)+'</td><td></td></tr></table>';
+  doc+='<h2>2. Home Office Deduction Breakdown</h2><p><b>Method:</b> Regular method &mdash; '+S.oSqFt+' sq ft office &divide; '+$(S.hSqFt).toLocaleString()+' sq ft home = <b>'+fp(c.bp)+'</b> business use.</p>';
+  doc+='<table><tr><th>Home Expense</th><th>Quarterly Total</th><th>'+fp(c.bp)+' Office</th></tr>'+hr;
+  doc+='<tr class="total-row"><td>HOME OFFICE TOTAL</td><td class="amount">'+fm(c.th)+'</td><td class="amount">'+fm(c.oq)+'</td></tr></table>';
   doc+='<div class="cert"><strong>✓ Certified by '+D.name+'</strong> on '+D.certAt+'<br><span style="font-size:9pt;color:#555">I certify that the above expenses were incurred for legitimate business purposes and that the amounts listed are accurate to the best of my knowledge.</span></div>';
   doc+='<br><p class="note">Supporting receipts and documentation available upon request.</p></body></html>';
-  var blob=new Blob([doc],{type:"application/msword"});
-  var url=URL.createObjectURL(blob);
-  var a=document.createElement("a");
-  a.href=url;a.download=D.name.replace(/\s+/g,"_")+"_Expense_Report_"+D.qtr.replace(/\s+/g,"_")+".doc";
-  a.click();URL.revokeObjectURL(url);
+  var blob=new Blob([doc],{type:"application/msword"});var url=URL.createObjectURL(blob);var a=document.createElement("a");
+  a.href=url;a.download=D.name.replace(/\s+/g,"_")+"_Expense_Report_"+D.qtr.replace(/\s+/g,"_")+".doc";a.click();URL.revokeObjectURL(url);
 }
 
-ld();render();
+ld();render();loadSettingsUI();
+if(sUrl)loadRemoteSettings();
 </script>
 </body>
 </html>
